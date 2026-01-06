@@ -1,0 +1,56 @@
+body {
+    background: #1d3557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #457b9d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#imgBox {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-top: 10px;
+}
+
+#imgBox.show-img {
+    max-height: 300px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+    border: 1px solid red;
+}
