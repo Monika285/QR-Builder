@@ -14,6 +14,5 @@ Input validation with shake error animation
 Dynamic UI created using pure JavaScript
 
 
-
 LIVE DEMO : 
 https://monika285.github.io/QR-Builder/
